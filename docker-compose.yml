@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  pipeline:
+    build: .
+    env_file: .env
+    command: python scripts/run_pipeline.py
+
+  dashboard:
+    build: .
+    env_file: .env
+    command: streamlit run dashboard/app.py --server.port=8501 --server.address=0.0.0.0
+    ports:
+      - "8501:8501"

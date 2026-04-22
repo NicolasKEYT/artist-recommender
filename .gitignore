@@ -1,0 +1,29 @@
+# Variáveis de ambiente — NUNCA commitar
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# Ambientes virtuais
+venv/
+.venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
