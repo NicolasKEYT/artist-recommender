@@ -74,7 +74,7 @@ def fetch_artist_info(artist_name: str) -> dict:
         return {}
 
 
-def extract_all(limit_per_genre: int = 200, min_listeners: int = 20000) -> list[dict]:
+def extract_all(limit_per_genre: int = 5, min_listeners: int = 1000) -> list[dict]:
     """Extrai top artistas de todos os gêneros."""
     all_artists = []
 
